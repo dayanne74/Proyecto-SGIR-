@@ -1,0 +1,41 @@
+### Crear un nuevo hotel
+POST http://localhost:9700/api/hotels HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Hotel Caribe",
+    "ubicacion": "San Andres",
+    "numeroHabitaciones": "1 habitaciones",
+    "numeroPersonas": "2 personas",
+    "comida": "incluida",
+    "precio": 20000,
+    "categoria": "baja"
+}
+
+###
+
+### Obtener todos los hoteles
+GET http://localhost:9700/api/hotels HTTP/1.1
+###
+
+### Obtener un hotel específico por ID
+GET http://localhost:9700/api/hotels/672ba0df40b27ac865281e2b HTTP/1.1
+###
+
+### Actualizar un hotel específico por ID
+PUT http://localhost:9700/api/hotels/672ba0df40b27ac865281e2b HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Hotel Molino de Viento",
+    "ubicacion": "San Andres",
+    "numeroHabitaciones": 12,
+    "numeroPersonas": 60,
+    "comida": "incluida",
+    "precio": 1000000,
+    "categoria": "baja"
+}
+###
+
+### Eliminar un hotel específico por ID
+DELETE http://localhost:9700/api/hotels/67ed33bfbb526b3decd26a1c HTTP/1.1
