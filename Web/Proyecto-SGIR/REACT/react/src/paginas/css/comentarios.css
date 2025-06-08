@@ -1,0 +1,140 @@
+/* comentarios.css */
+
+/* Contenedor principal */
+.comentarios-container {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.comentarios-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* CRUD y formulario contenedor */
+.comentarios-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.comentarios-form,
+.comentarios-lista {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios-form h3,
+.comentarios-lista-titulo {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Inputs y Select */
+.comentarios-form input,
+.comentarios-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.comentarios-form select {
+  cursor: pointer;
+  appearance: none;
+}
+
+.comentarios-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comentarios-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de comentarios */
+.comentarios-lista {
+  margin-top: 20px;
+}
+
+.comentarios-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comentarios-item span {
+  flex: 1;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+.comentarios-item button {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.comentarios-item button:hover {
+  color: #0056b3;
+}
+
+.comentarios-btn-eliminar {
+  color: #e74c3c;
+}
+
+.comentarios-btn-eliminar:hover {
+  color: #c0392b;
+}
+
+/* Botones de acciones */
+.comentarios-btn-editar {
+  color: #27ae60;
+}
+
+.comentarios-btn-editar:hover {
+  color: #1e8449;
+}
+
+/* Tabla Responsiva */
+@media (max-width: 768px) {
+  .comentarios-grid {
+    flex-direction: column;
+  }
+}
+.comentarios-item span div {
+  margin-bottom: 5px; /* Espaciado entre líneas */
+}

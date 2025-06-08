@@ -1,0 +1,142 @@
+/* Contenedor principal con la imagen borrosa */
+.nosotros-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen de fondo difuminada */
+.nosotros-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/destinos/pack4.jpg') center/cover no-repeat;
+  backdrop-filter: blur(10px);
+  opacity: 0.6; /* Ajusta la opacidad para que no sea muy fuerte */
+  z-index: -1; /* Para que no tape el contenido */
+}
+
+/* Caja principal */
+.nosotros-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto 50px auto; /* Aumentamos más el margen superior */
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+/* Tarjeta del gerente */
+.gerente-card {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* Imagen del gerente */
+.gerente-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #16798c;
+}
+
+.gerente-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Información del gerente */
+.gerente-info {
+  flex: 1;
+}
+
+.gerente-info h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+}
+
+.gerente-cargo {
+  font-size: 1.1rem;
+  color: #16798c;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.gerente-descripcion {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Sección Misión y Visión */
+.mision-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mision, .vision {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mision h3, .vision h3 {
+  color: #16798c;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mision p, .vision p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Sección del mapa */
+.mapa-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container h3 {
+  font-size: 1.5rem;
+  color: #16798c;
+  margin-bottom: 15px;
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.icono {
+  margin-right: 10px;
+  color: #16798c;
+}
