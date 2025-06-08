@@ -1,0 +1,23 @@
+###
+
+POST http://localhost:9700/api/comida HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Lasaña Costeña",
+    "descripcion": "Versión local con queso costeño, carne molida y vegetales, servida con casuela en la costa.",
+    "precio": "25000",
+    "categoria": "Plato fuerte"
+  }
+###
+
+GET http://localhost:9700/api/comida HTTP/1.1
+
+###
+
+GET http://localhost:9700/api/comida/67586a3f17c99cb8a3afed4b HTTP/1.1
+
+###
+
+DELETE http://localhost:9700/api/comida/67586a3f17c99cb8a3afed4b HTTP/1.1
+

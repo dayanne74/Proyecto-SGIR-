@@ -1,0 +1,46 @@
+# request.http
+
+POST http://localhost:9700/api/reservas HTTP/1.1
+Content-Type: application/json
+
+{
+  "servicio": "paquete", 
+  "destino": "Madrid",
+  "hotel": "Hotel Madrid Plaza",
+  "comida": "Desayuno Buffet",
+  "numeroPersonas": 2,
+  "precioTotal": 500.00,
+  "fechaReserva": "2024-12-20"
+}
+
+
+
+###
+
+### Obtener todas las reservas
+GET http://localhost:9700/api/reservas HTTP/1.1
+###
+
+### Obtener una reserva específica por ID
+
+GET http://localhost:9700/api/reservas/673e95cd0fb6ea1a967ac8d0 HTTP/1.1
+###
+
+### Actualizar una reserva específica por ID
+
+PUT http://localhost:9700/api/reservas/673d8877976b815d1693fe66 HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipoDocumento": "Pasaporte",
+    "numeroDocumento": 87654321,
+    "nombreCliente": "María López",
+    "destino": "Bogotá",
+    "fechaInicio": "2024-01-10",
+    "fechaRegreso": "2024-01-15",
+    "estado": "Reprogramada"
+}
+###
+
+### Eliminar una reserva específica por ID
+DELETE http://localhost:9700/api/reservas/ HTTP/1.1
