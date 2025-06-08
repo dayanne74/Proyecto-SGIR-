@@ -1,0 +1,15 @@
+POST http://localhost:9700/api/destinos
+Content-Type: application/json
+
+{
+  "nombre": "Bogotá Cultural",
+  "descripcion": "Cundinamarca, Colombia",
+  "precioBase": 1050000
+}
+
+###
+GET http://localhost:9700/api/destinos
+
+###
+DELETE http://localhost:9700/api/destinos/67ec72c129b34cf78ee1c358 HTTP/1.1
+Content-Type: application/json
